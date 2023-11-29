@@ -15,6 +15,7 @@ export default function HornedBeast(props) {
 
     }
 
+    
     return (
         <div onClick={handleClick}>
             <Image src={props.image_url} alt="Horned Beast" rounded fluid></Image>
