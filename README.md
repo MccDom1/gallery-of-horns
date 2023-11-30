@@ -7,15 +7,15 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Number and name of feature: ________________________________
+Number and name of feature: ____Lab 02____________________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: _3 hrs____
 
-Start time: _____
+Start time: ____3pm_
 
-Finish time: _____
+Finish time: ___8pm__
 
-Actual time needed to complete: _____
+Actual time needed to complete: _6 hrs____
 
 
 
