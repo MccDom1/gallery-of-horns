@@ -1,32 +1,19 @@
-// Add image
-// Change names in props.title locations
-
-
-import  Modal  from "react-bootstrap/Modal";    
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-
-function SelectedBeast(props){
-    return(
-        <Modal show={props.show} handleClose={props.handleClose}>
-            <Modal.Header closeButton>
-            <Modal.Title>{props.title}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <Card.Img src={props.image_url} alt="Horned Beast" rounded fluid></Card.Img>
-                <Card.Text>
-                    {props.description}
-                </Card.Text>
-            </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={props.handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={props.handleClose}>
-                    Save Changes
-                </Button>
-            </Modal.Footer>
-        </Modal>
-    )
-} 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+function SelectedBeast(props) {
+    return (
+        <div>
+            <Modal show={props.show} onHide={props.handleCloseModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>{props.selectedBeast.title}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{props.selectedBeast.description}</Modal.Body>
+                <Modal.Footer>
+                    <Button /*variant="secondary"*/ onClick={props.handleCloseModal}>Close</Button>
+                </Modal.Footer>
+            </Modal>
+        </div>
+    );
+}
 export default SelectedBeast;
