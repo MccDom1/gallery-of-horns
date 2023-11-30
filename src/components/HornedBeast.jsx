@@ -8,18 +8,18 @@ export default function HornedBeast(props) {
 
     function handleClick() {
         if (status === "like") {
-            setFavoriteCount(favoriteCount + 1);
-        } else {
+            
+        
             setFavoriteCount(favoriteCount + 1);
         }
-
+props.displayasModal(props.image_url.title);
     }
 
 
     
     return (
         <div onClick={handleClick}>
-            <Image src={props.image_url} alt="Horned Beast" rounded fluid></Image>
+            <Image src={props.image_url.image_url} alt="Horned Beast" rounded fluid></Image>
             <h3>{status}{""}
                 <span>
                     <FaHeart /> {favoriteCount}

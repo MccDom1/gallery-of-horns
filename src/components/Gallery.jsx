@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+// Get rid of everything in Container in line 12
+// use .map to display HornedBeast from props.data(data.json)
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -11,7 +13,7 @@ function Gallery(props) {
       <Container>
         <Row>
           <Col>
-            <HornedBeast image_url={props.imageUrls[0].image_url} />
+            <HornedBeast displayasModal={props.displayModal} image_url={props.imageUrls[0]} />
           </Col>
           <Col>
             <HornedBeast image_url={props.imageUrls[1].image_url} />
