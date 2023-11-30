@@ -1,5 +1,5 @@
 // Change the name of imageUrls to allBeast in every instance.
-//
+// Modal 
 App.jsx
 import React from'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,7 +8,7 @@ import Header from './components/Header.jsx';
 import Gallery from './components/Gallery.jsx';
 import Footer from './components/Footer.jsx';
 import SelectedBeast from './components/SelectedBeast.jsx';
-import imageUrls from './data.json'; // can change to better variable name later
+import imageUrls from './data.json'; 
 import Container from'react-bootstrap/Container';
 function App() {
   const [show, setShow] = React.useState(false);
@@ -25,12 +25,13 @@ function App() {
     <Container>
       <Header title="Gallery of Horns" />
       <Gallery message="Gallery of Horns" imageUrls={imageUrls} displayModal={dispayModal} />
-      <SelectedBeast
+      {selectedBeast && <SelectedBeast
         show={show}
         selectedBeast={selectedBeast}
         handleCloseModal={handleCloseModal}
-      />
-      <Footer copyright="2023 Armando Bugarin" />
+        imageUrls={imageUrls}
+      />}
+      <Footer copyright="2023 Dominique McClaney" />
     </Container>
   );
 }
