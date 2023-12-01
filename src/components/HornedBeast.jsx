@@ -8,9 +8,8 @@ export default function HornedBeast(props) {
         if (status === "like") {
             setFavoriteCount(favoriteCount + 1);
         }
-        props.displayModal(
-            props.title
-        )
+        props.displayModal(props.title);
+            
     }
     return (
         <div onClick={handleClick}>
@@ -23,3 +22,15 @@ export default function HornedBeast(props) {
         </div>
     );
 }
+
+
+
+
+
+
+
+
+
+
+
+
