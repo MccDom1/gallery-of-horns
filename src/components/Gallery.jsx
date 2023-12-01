@@ -1,8 +1,6 @@
-/* eslint-disable react/prop-types */
-// Get rid of everything in Container in line 12
-// use .map to display HornedBeast from props.data(data.json)
-/* eslint-disable react/prop-types */
-/* eslint-disable react/prop-types */
+
+
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
