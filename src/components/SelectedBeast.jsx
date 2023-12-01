@@ -11,7 +11,16 @@ function SelectedBeast(props) {
                     <Modal.Title>{props.selectedBeast.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img src={props.selectedBeast.imageUrls} alt={props.selectedBeast.title} />
+                    <img
+                        src={props.selectedBeast.image_url}
+                        alt={props.selectedBeast.title}
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                            display: "block",
+                            margin: "auto",
+                        }}
+                    />
                 </Modal.Body>
                 <Modal.Footer>{props.selectedBeast.description}
                     <Button onClick={props.handleCloseModal}>Close</Button>
@@ -20,4 +29,4 @@ function SelectedBeast(props) {
         </div>
     );
 }
-export default SelectedBeast; 
+export default SelectedBeast;
